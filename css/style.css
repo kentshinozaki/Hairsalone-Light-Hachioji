@@ -570,6 +570,12 @@ p { margin: 0 0 1em; line-height: 1.7; }
 .visit-sub a { color: var(--mustard-light); }
 .map-embed { margin-top: 18px; height: 220px; border: 1px solid rgba(243,232,209,.25); filter: grayscale(.3) contrast(1.05); }
 .visit-card--cta p { opacity: .9; font-size: .92rem; }
+.closed-calendar { margin-top: 24px; background: rgba(243,232,209,.04); border: 1px solid rgba(243,232,209,.25); padding: 30px 26px; }
+.closed-calendar h3 { font-size: 1.2rem; margin-bottom: 18px; color: var(--mustard); }
+.closed-calendar h3 small { display: block; font-family: var(--font-body); font-style: italic; text-transform: none; font-size: .72rem; opacity: .65; margin-top: 4px; color: var(--cream); }
+.closed-calendar__grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; max-width: 760px; }
+.closed-calendar__grid img { width: 100%; height: auto; display: block; }
+@media (max-width: 640px) { .closed-calendar__grid { grid-template-columns: 1fr; } }
 
 /* =========================================================
    FOOTER
